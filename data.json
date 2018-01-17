@@ -1,0 +1,32 @@
+{
+  "cart":[
+
+    {
+      "url":"amazon.con",
+      "name":"title 1",
+      "image":"a.jpg",
+      "seller":"seller 1",
+      "isAvailable": true,
+      "isEligible":true
+    }
+,
+    {
+      "url":"amazon.con",
+      "name":"title 2",
+      "image":"b.jpg",
+      "seller":"seller 1",
+      "isAvailable": true,
+      "isEligible":true
+    }
+    ,
+    {
+      "url":"amazon.con",
+      "name":"title 3",
+      "image":"c.jpg",
+      "seller":"seller 3",
+      "isAvailable": true,
+      "isEligible":true
+    }
+  ]
+
+}
