@@ -5,7 +5,7 @@ window.addEventListener('load',function () {
         el: '#app',
         data: {
 
-            message: 'VAY MK ARKADAŞ!',
+            message: 'VUE GİRİŞ!',
             msg1:"MSG #1",
             msg2:"MESAJ 2",
             isLoggedIn: false

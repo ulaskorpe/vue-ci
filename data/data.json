@@ -1,0 +1,39 @@
+{
+  "cart":[
+
+    {
+      "url":"amazon.con",
+      "name":"title 1",
+      "image":"http://codeigniter-mod.test/img/a.jpg",
+      "seller":"seller 1",
+      "isAvailable": true,
+      "isEligible":true,
+      "price":"52.2"
+    }
+  ,
+    {
+      "url":"amazon.con",
+      "name":"title 2",
+      "image":"http://codeigniter-mod.test/img/b.jpg",
+      "seller":"seller 1",
+      "isAvailable": false,
+      "isEligible":true,
+      "price":"20.13"
+    }
+  ,
+    {
+      "url":"amazon.con",
+      "name":"title 3",
+      "image":"http://codeigniter-mod.test/img/c.jpg",
+      "seller":"seller 3",
+      "isAvailable": true,
+      "isEligible":false,
+      "price":"15.6"
+    }
+  ]
+,
+  "saved":[
+
+  ]
+
+}

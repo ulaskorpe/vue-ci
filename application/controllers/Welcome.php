@@ -35,17 +35,24 @@ class Welcome extends CI_Controller {
 	    $this->load->view('vue_cart');
     }
 
-	public function getMessage($a=0,$b=0,$c=0){
 
-
-	    echo $a+$b+$c;
-    }
 
     public function getParameters(){
 
 	    $param1 = $this->uri->segment(5);
 
 	    echo $param1;
+
+    }
+
+    public function component(){
+
+        $this->load->view('component_view');
+
+    }
+    public function component2(){
+
+        $this->load->view('component2_view');
 
     }
 
