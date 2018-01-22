@@ -1,17 +1,70 @@
 new Vue({
 
-   el:"#vue-app",
-    data :{
-       name: 'ulaşkörpe',
-        website : 'https://www.youtube.com/watch?v=xIOwFTCBBDg&index=4&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa',
-        webtag :'<a href="https://www.youtube.com/watch?v=xIOwFTCBBDg&index=4&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa" target="_blank">SITE</a>'
+    el: "#vue-app",
+    data: {
+        name: '',
+        website: 'https://www.youtube.com/watch?v=xIOwFTCBBDg&index=4&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa',
+        webtag: '<a href="https://www.youtube.com/watch?v=xIOwFTCBBDg&index=4&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa" target="_blank">SITE</a>',
+        age: 13,
+        x: 0,
+        y: 0,
+        a:0,
+        vue_value:true,
+        characters:['ezio','dovakiin','maxpayne'],
+        ninjas :[
+            {name:'ryu',age:24},
+            {name:'ken',age:28},
+            {name:'blanka',age:50},
+            {name:'chun-li',age:25}
+        ]
+
     },
-    methods : {
+    methods: {
 
-       greet:function(){
-           return "hi"+this.name;
-       }
+        greet: function () {
+            return "hi" + this.name;
+        }
+        ,
+        doDouble:function() {
 
+            this.age = this.age * 2;
+        }
+        , addTen:function() {
+            this.age += 10;
+        },
+        updateMouse:function(event) {
+            //console.log(event);
+            // this.x =  event.screenX;
+            // this.y =  event.screenY;
+
+            this.x =  event.offsetX;
+            this.y =  event.offsetY;
+        }
+        ,
+        click:function(){
+            alert("click");
+        },
+        logName:function(){
+           this.name = "";
+
+        },
+
+        changeClass:function(){
+            this.vue_value = (this.vue_value) ? false : true;
+        }
+        /*addToA:function(){
+            return this.a+this.age;
+        }*/
+    },
+    computed:{
+
+        addToA:function(){
+                    return this.a+this.age;
+                },
+
+        compClasses: function (){
+
+        }
     }
 
 

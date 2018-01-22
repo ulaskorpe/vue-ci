@@ -59,5 +59,8 @@ class Welcome extends CI_Controller {
     public function vue_instance(){
         $this->load->view('vue_instance');
     }
+    public function vue_punchbag(){
+        $this->load->view('vue_punchbag');
+    }
 
 }
