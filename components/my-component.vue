@@ -1,13 +1,19 @@
 <template>
-    <div class="hello">Hello {{who}}</div>
+    <div class="hello">{{title}}</div>
 </template>
 
 <script>
     module.exports = {
         data: function() {
             return {
-                who: 'world'
+                title: 'xaadds'
             }
+        },
+        created(){
+            this.$eventBus.$on('titleChanged',(data)=>{
+
+               this.title = data;
+            });
         }
     }
 </script>

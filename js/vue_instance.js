@@ -2,7 +2,7 @@ new Vue({
 
     el: "#vue-app",
     data: {
-        name: '',
+        name: 'ddddddd',
         website: 'https://www.youtube.com/watch?v=xIOwFTCBBDg&index=4&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa',
         webtag: '<a href="https://www.youtube.com/watch?v=xIOwFTCBBDg&index=4&list=PL4cUxeGkcC9gQcYgjhBoeQH7wiAyZNrYa" target="_blank">SITE</a>',
         age: 13,
@@ -18,8 +18,28 @@ new Vue({
             {name:'chun-li',age:25}
         ]
 
+        ,
+        matches : [
+
+        ]
+
     },
     methods: {
+
+        getMatch:function (param,a,b,c){
+
+                    $.get('/ulaskorpe/',function (data) {
+                        this.matches = data ;
+                    });
+
+            },
+
+
+        goster:function () {
+           // alert( JSON.stringify(this.$refs));
+            alert(this.$refs.input_1.value);
+
+        },
 
         greet: function () {
             return "hi" + this.name;

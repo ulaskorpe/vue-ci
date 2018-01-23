@@ -6,6 +6,7 @@
     <title>component kullanımı</title>
     <script src="<?= base_url('/js/vue.js') ?>"></script>
     <script src="<?= base_url('/js/httpVueLoader.js') ?>"></script>
+
     <!--
     <script src="https://unpkg.com/http-vue-loader"></script>
     -->

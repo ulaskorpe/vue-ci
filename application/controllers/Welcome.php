@@ -63,4 +63,14 @@ class Welcome extends CI_Controller {
         $this->load->view('vue_punchbag');
     }
 
+    public function event_bus(){
+        $this->load->view('event_bus');
+    }
+
+    public function vue_form(){
+        $this->load->view('vue_form');
+    }
+
+
+
 }

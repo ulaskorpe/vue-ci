@@ -4,6 +4,15 @@
 <body>
 <?php include "partials/menu.php" ?>
 <div id="vue-app" v-on:mousemove="updateMouse">
+
+    <input type="text" ref="input_1">
+
+    <button v-on:click="goster()">ddd</button>
+
+
+    <hr>
+
+
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <p>{{greet()}}</p>
     <a v-bind:href="website" target="_blank">NINJA TUTORIAL</a><br>
