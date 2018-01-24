@@ -71,6 +71,70 @@ class Welcome extends CI_Controller {
         $this->load->view('vue_form');
     }
 
+    public function post_form(){
+
+
+        $data = json_decode($this->input->post('data'));
+
+
+
+   /*      $array=['title','content','categories','author'];
+        $data = [];
+
+        foreach ($array as $a){
+            $data[$a] =[$a=>$this->input->post($a) ];
+        }
+
+        $d_insert =[
+          'title'=>$this->input->post('title'),
+          'data'=>$this->input->post('content').":".$this->input->post('author'),
+          'type'=>1
+        ];*/
+
+        //$this->db->insert('tmp',$d_insert);
+
+
+        $request_body = file_get_contents('php://input');
+        $data = json_decode($request_body);
+
+      //  $gelen = json_encode($data);
+
+
+        $this->db->query("INSERT INTO tmp (title,data,type) VALUES ('".$data->title."','".$data->content."',".date('mdHis').")");
+
+//        var_dump($data);
+//        die();
+//       for($i=0;$i<1000;$i++){
+//            $data[]=[
+//                'id'=>$i,
+//                'data'=>rand(100,20000)
+//            ];
+//        }
+
+    //    echo date("YmdHis");
+
+      // return $data;
+      //  exit(json_encode($d_insert));
+       // echo "ok";
+
+    }
+
+
+    public function get_blogs(){
+
+      /*  for($i=0;$i<10;$i++){
+            $data[]=[
+                'id'=>$i,
+                'title'=>'abc',
+                'body'=>rand(100,20000)
+            ];
+        }*/
+
+      $data= $this->db->query("SELECT * FROM tmp")->result();
+
+         // return $data;
+         exit(json_encode($data));
+    }
 
 
 }
