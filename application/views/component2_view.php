@@ -3,6 +3,7 @@
 <?php include "partials/head.php"?>
 <body>
 <?php include "partials/menu.php" ?>
+<router-view></router-view>xxx
 <div id="app">
     <p v-if="isLoading"><img src="<?= base_url('/img/loading.gif') ?>" alt=""></p>
     <div v-if="!isLoading">

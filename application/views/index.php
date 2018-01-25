@@ -15,8 +15,6 @@
 </div>
 
 
-
-
 <p>V-if ile v-show arasında bir fark var , vshow sadece dispay propunu değiştiriyor. vif ise , domda olup olmamasını sağlar
 
 

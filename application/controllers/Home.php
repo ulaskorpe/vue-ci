@@ -30,4 +30,8 @@ class Home extends CI_Controller {
 
         $this->load->view('show_file',$data);
     }
+
+    public function index(){
+        echo "ok";
+    }
 }

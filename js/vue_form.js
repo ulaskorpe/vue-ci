@@ -1,11 +1,7 @@
 
 Vue.use(VueResource);
 
-////custom directives
 
-
-
-////custom directives
 
 new Vue({
 

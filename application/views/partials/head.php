@@ -6,8 +6,20 @@
     <title>component kullanımı</title>
     <script src="<?= base_url('/js/vue.js') ?>"></script>
     <script src="<?= base_url('/js/httpVueLoader.js') ?>"></script>
-
+    <script src="<?= base_url('/node_modules/vue-router/dist/vue-router.js') ?>"></script>
+    <script src="<?= base_url('/js/routes.js') ?>"></script>
     <!--
     <script src="https://unpkg.com/http-vue-loader"></script>
     -->
+
+    <script>
+        const router = new VueRouter({
+            route: [
+                {path:'/ulascomponent',component:  'components/ulascomponent.vue'},
+                {path:'/basic',component:  './components/basic.vue'}
+                   ]
+        });
+
+    </script>
+
 </head>
